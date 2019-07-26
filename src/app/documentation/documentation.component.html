@@ -1,0 +1,15 @@
+<div class="header is-sticky is-light hide tablet">
+    <div class="container">
+        <a class="header-item expand" (click)="toggleMenu()">show/hide menu</a>
+    </div>
+</div>
+<div class="container">
+    <div class="columns is-tablet">
+        <div class="column is-3 toggle is-tablet" [ngClass]="{'is-active': showMenu}">
+        <app-menu-left (closeM)="closeMenu()"></app-menu-left>
+    </div>
+    <div class="column is-9 toggle is-tablet" [ngClass]="{'is-active': !showMenu}">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+</div>

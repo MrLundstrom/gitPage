@@ -1,0 +1,19 @@
+<h1>Toggle</h1>
+<div class="divider"></div>
+<p>The toggle componenet lets you show and hide content easily depending on the state of the toggle and what device
+    you are using.
+    There are 3 different toggles which behave differently depending on the viewport-size. You can add a toggle
+    class to most type of elements.
+</p>
+<p>the regular 'toggle' is hidden on all devices, unless you add 'is-active' to the class.</p>
+<p>the toggle 'is-tablet' is hidden on mobile, unless you add 'is-active' to the class.</p>
+<p>the toggle 'is-desktop' is hidden on mobile and tablet, unless you add 'is-active' to the class.</p>
+
+<div class="divider"></div>
+<button [ngClass]="{'is-danger': !showToggle,'is-success':showToggle}" (click)="toggle()">Show/Hide toggles</button>
+<p class="toggle center-text" [ngClass]="{'is-active': showToggle}">regular</p>
+<p class="toggle is-tablet center-text" [ngClass]="{'is-active': showToggle}">tablet</p>
+<p class="toggle is-desktop center-text" [ngClass]="{'is-active': showToggle}">desktop</p>
+<p class="info">Resize your browser to see the behavior. is-active: {{showToggle}}</p>
+<pre><code [highlight]="toggles">
+    </code></pre>

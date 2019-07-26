@@ -1,0 +1,32 @@
+<h1>Form-item</h1>
+<div class="divider"></div>
+<p>A form item can have text, buttons and inputs. You can have several of them in a form-item, and you just need to add
+    'add-on' to all but the main element (usually the input).
+</p>
+<div class="form-item">
+    <p class="add-on is-link">
+        <fa-icon icon="calculator" [fixedWidth]="true"></fa-icon>
+    </p>
+    <input type="number" class="is-link" placeholder="Number">
+    <button type="button" class="add-on is-link">
+        <fa-icon icon="plus" [fixedWidth]="true"></fa-icon>
+        add
+    </button>
+</div>
+<pre><code [highlight]="addOn">
+</code></pre>
+
+<p>If you want your form-item to take up the full width, add 'expand' to both the form item, and the element inside that
+    you want to fill up the space.</p>
+
+<div class="form-item expand">
+    <p class="add-on is-success">
+        <fa-icon icon="envelope" [fixedWidth]="true"></fa-icon>
+    </p>
+    <input type="email" class="expand is-success" placeholder="E-mail">
+</div>
+
+<pre><code [highlight]="expand">
+            </code></pre>
+
+<p>You can add all kinds of inputs to a form-item, but the implementation differs for some of them. To learn more about it, visit 'Input'.</p>

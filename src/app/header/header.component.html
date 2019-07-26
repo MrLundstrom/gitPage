@@ -1,0 +1,21 @@
+<div class="header is-dark gradient is-fixed" [ngClass]="{'is-active': showMenu}">
+    <div class="container move-spread">
+        <a class="header-item" routerLink="">
+            <img src="../../assets/archipelag.png" height="48" width="48">
+        </a>
+        <div class="header-menu">
+            <a class="header-item" routerLink="documentation" (click)="showMenu = false;">
+                <p>
+                    <fa-icon class="text-link" icon="file" [fixedWidth]="true"></fa-icon>Documentation
+                </p>
+            </a>
+        </div>
+
+        <a class="header-toggle" (click)="toggleMenu()" [ngClass]="{'is-active': showMenu}">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </a>
+
+    </div>
+</div>

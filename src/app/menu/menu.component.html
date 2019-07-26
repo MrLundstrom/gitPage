@@ -1,0 +1,50 @@
+<h1>Menu</h1>
+<div class="divider"></div>
+<p>
+    A 'menu' is a vertical list of items that can be used for example linking. You can add items, sub-menus and
+    titles to it. A menu takes up 100% width of it parent.
+</p>
+
+<div class="menu">
+    <ul class="menu-items">
+        <li class="menu-title">Title</li>
+        <li class="menu-item"><a>menu-item</a></li>
+        <li class="menu-item"><a>menu-item</a></li>
+        <li class="sub-items">
+            <ul class="menu-items">
+                <li class="menu-title">Title</li>
+                <li class="menu-item"><a>menu-item</a></li>
+                <li class="menu-item"><a>menu-item</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<pre><code [highlight]="menu">
+    </code></pre>
+
+<p>It is also possbible to nest sub-menus.</p>
+
+<div class="menu">
+    <ul class="menu-items">
+        <li class="menu-title">Title</li>
+        <li class="menu-item"><a>menu-item</a></li>
+        <li class="menu-item"><a>menu-item</a></li>
+        <li class="sub-items">
+            <ul class="menu-items">
+                <li class="menu-title">Title</li>
+                <li class="menu-item"><a>menu-item</a></li>
+                <li class="menu-item"><a>menu-item</a></li>
+                <li class="sub-items">
+                    <ul class="menu-items">
+                        <li class="menu-title">Title</li>
+                        <li class="menu-item"><a>menu-item</a></li>
+                        <li class="menu-item"><a>menu-item</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<pre><code [highlight]="submenu">
+    </code></pre>

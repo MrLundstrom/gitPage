@@ -1,0 +1,37 @@
+<h1>Image</h1>
+<div class="divider"></div>
+<p>
+    The 'image' class is made to better control img elements. It can be set to a specific aspect-ratio between 1x4 - 8x4
+    &
+    1x3 - 6/3, or just let it adjust to the image. <p>
+        <div class="divider is-danger"></div>
+        <p class="center-text">You can't use padding/margin on the
+            'image'
+            if you use a aspect ratio, so just encapsulate it in a padding/margin div</p>
+        <div class="divider is-danger"></div>
+        <p>
+            By appling the 'cover' class on the img, the image will keep it's originial aspect ratio and instead cover
+            the image
+            container. You can easily add a image description by adding a info class under the image container.
+        </p>
+        <div class="margin-1">
+            <div class="image is-2x3">
+                <img src="../../assets/water.jpg">
+            </div>
+        </div>
+        <p class="info">image text</p>
+        <pre><code [highlight]="image">
+    </code></pre>
+        <div class="divider is-light"></div>
+        <p> You can also make images rounder by using 'is-rounded' (and totally round if you set the aspect ratio to 4x4
+            or
+            3x3).</p>
+        <div class="columns is-tablet">
+            <div class="column is-6 is-offset-3 margin-1">
+                <div class="image is-4x4 is-rounded">
+                    <img class="cover" src="../../assets/water.jpg">
+                </div>
+            </div>
+        </div>
+        <pre><code [highlight]="roundImage">
+    </code></pre>

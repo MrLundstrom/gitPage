@@ -1,0 +1,107 @@
+<h1>Columns</h1>
+<div class="divider"></div>
+<p>'columns' is a container for 'column' items. columns is by default a flexbox-container with
+    flex-direction row. On mobile and tablet, it sets all column-items width to 100%
+    and they are therefore stacked vertically. By
+    adding 'is-mobile' or 'is-tablet', the column-items keep their default behavior down to and including that size.
+</p>
+<h5>Regular</h5>
+<div class="columns padding-1 margin-1">
+    <div class="column padding-1">
+        <div class="fill padding-1">column</div>
+    </div>
+    <div class="column padding-1">
+        <div class="fill padding-1">column</div>
+    </div>
+    <div class="column padding-1">
+        <div class="fill padding-1">column</div>
+    </div>
+</div>
+<pre><code [highlight]="regular">
+    </code></pre>
+<div class="divider is-light"></div>
+<h5>Tablet</h5>
+<div class="columns is-tablet padding-1 margin-1">
+    <div class="column padding-1">
+        <div class="fill padding-1">column</div>
+    </div>
+    <div class="column padding-1">
+        <div class="fill padding-1">column</div>
+    </div>
+    <div class="column padding-1">
+        <div class="fill padding-1">column</div>
+    </div>
+</div>
+<pre><code [highlight]="tablet">
+    </code></pre>
+<div class="divider is-light"></div>
+<h5>Mobile</h5>
+<div class="columns is-mobile padding-1 margin-1">
+    <div class="column padding-1">
+        <div class="fill padding-1">column</div>
+    </div>
+    <div class="column padding-1">
+        <div class="fill padding-1">column</div>
+    </div>
+    <div class="column padding-1">
+        <div class="fill padding-1">column</div>
+    </div>
+</div>
+<pre><code [highlight]="mobile">
+    </code></pre>
+<div class="divider is-light"></div>
+<div class="info"><span class="text-main text-center">Resize your browser-window to see the difference</span></div>
+<p>
+    'column' is a flex-item that populates a 'columns'
+    container. By default, they take up as much space as they can,
+    and sharing it with other column-items so that all content fits.
+    You can set a specific width
+    for them by adding 'is-#' where # is a number between 1 and 12. You can also
+    offset a column to the right by using
+    'is-offset-#' where # is a number between 1 and the size of the column, (column is-5 can
+    use is-offset-1 to
+    is-offset-7).
+</p>
+
+<div class="columns is-tablet padding-1 margin-1">
+    <div class="column padding-1 is-2">
+        <div class="fill padding-1">column is-2</div>
+    </div>
+    <div class="column padding-1 is-4">
+        <div class="fill padding-1">column is-4</div>
+    </div>
+    <div class="column padding-1">
+        <div class="fill padding-1">column</div>
+    </div>
+</div>
+<pre><code [highlight]="columns">
+    </code></pre>
+<div class="divider is-light"></div>
+<div class="columns is-tablet padding-1 margin-1">
+    <div class="column padding-1 is-6 is-offset-6">
+        <div class="fill padding-1">column is-6 is-offset-6</div>
+    </div>
+</div>
+<pre><code [highlight]="offset">
+    </code></pre>
+<div class="divider is-light"></div>
+<p>
+    You can nest columns as many times as you would like, but you do have to apply
+    the extra classes on them
+    if you want the same behaviour.
+</p>
+<div class="columns is-tablet padding-1 margin-1">
+    <div class="column padding-1 is-6">
+        <div class="fill padding-1">column is-6</div>
+    </div>
+    <div class="columns is-tablet">
+        <div class="column padding-1 is-6">
+            <div class="fill padding-1">column is-6</div>
+        </div>
+        <div class="column padding-1 is-6">
+            <div class="fill padding-1">column is-6</div>
+        </div>
+    </div>
+</div>
+<pre><code [highlight]="nested">
+    </code></pre>

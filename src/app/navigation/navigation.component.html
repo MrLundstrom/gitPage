@@ -1,0 +1,98 @@
+<h1>Header</h1>
+<div class="divider"></div>
+<p>The header works as a navigation-bar for your website. You can modify it by adding
+    is-fixed or is-sticky to
+    either make it fixed to the top, or to be a sticky-positioned item.</p>
+<p>Within a header, a container or a flex-container should hold your content. You can
+    place a
+    header-items, and a header-menu as children to the
+    container. You can then add header-items and header-dropdowns to the header-menu.
+</p>
+
+<div class="header is-white is-sticky margin-1" [ngClass]="{'is-active': showMenu}">
+    <div class="container move-spread">
+        <a class="header-item">Header-item</a>
+        <div class="header-menu">
+            <div class="header-dropdown">
+                <a class="header-item">
+                    <p>Dropdown</p>
+                </a>
+                <div class="dropdown">
+                    <a class="header-item">Option 1</a>
+                    <a class="header-item">Option 2</a>
+                </div>
+            </div>
+        </div>
+        <a class="header-toggle" (click)="toggleMenu()" [ngClass]="{'is-active': showMenu}">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </a>
+    </div>
+</div>
+
+<pre><code [highlight]="header">
+    </code></pre>
+
+<p>A header-menu and its contents is visible on desktops, but hidden on mobiles and
+    tablets by default, but you can
+    easily show it as a dropdown-menu by adding the class is-active.
+    It can contain both header-items and header-dropdowns. (<span class="text-danger">Archipelago does not include
+        any
+        javascript.</span>)</p>
+
+<pre><code [highlight]="active">
+        </code></pre>
+
+<p>
+    You can change the apperance of your header by adding is-# where # is one
+    of the
+    theme-colors.
+</p>
+
+<div class="header is-main margin-1">
+    <p class="header-item"> is-main </p>
+</div>
+<div class="header is-secondary margin-1">
+    <p class="header-item"> is-secondary </p>
+</div>
+<div class="header is-danger margin-1">
+    <p class="header-item"> is-danger </p>
+</div>
+<div class="header is-warning margin-1">
+    <p class="header-item"> is-warning </p>
+</div>
+<div class="header is-success margin-1">
+    <p class="header-item"> is-success </p>
+</div>
+<div class="header is-link margin-1">
+    <p class="header-item"> is-link </p>
+</div>
+<div class="header is-transparent margin-1">
+    <p class="header-item"> is-transparent </p>
+</div>
+<div class="header is-white margin-1">
+    <p class="header-item"> is-white </p>
+</div>
+<div class="header is-light margin-1">
+    <p class="header-item"> is-light </p>
+</div>
+<div class="header is-dark margin-1">
+    <p class="header-item"> is-dark </p>
+</div>
+<div class="header is-black margin-1">
+    <p class="header-item"> is-black </p>
+</div>
+
+<pre><code [highlight]="color">
+        </code></pre>
+
+
+<p>You can also change the apperance even more by adding gradient.</p>
+
+<div class="header is-danger gradient margin-1">
+    <p class="header-item"> is-danger gradient </p>
+</div>
+
+<pre><code [highlight]="gradient">
+        </code></pre>
